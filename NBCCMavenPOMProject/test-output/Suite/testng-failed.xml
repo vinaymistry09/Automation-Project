@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.nbcc.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="NBCC Test(failed)">
+    <classes>
+      <class name="com.nbcc.qa.testcases.StudentSelfSerivceTest">
+        <methods>
+          <include name="verifyAcademicTitle"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="verifyNotificationText"/>
+          <include name="verifyseachclassbutton"/>
+        </methods>
+      </class> <!-- com.nbcc.qa.testcases.StudentSelfSerivceTest -->
+      <class name="com.nbcc.qa.testcases.RefundPageTest">
+        <methods>
+          <include name="verifyRefundAmount"/>
+          <include name="tearDown"/>
+          <include name="verifyNewWindow"/>
+          <include name="verifypersonalizepagelink"/>
+          <include name="verifyRefundPageLabel"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- com.nbcc.qa.testcases.RefundPageTest -->
+      <class name="com.nbcc.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="verifyUserName"/>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="verifyDocumentPageLink"/>
+          <include name="verifyPaymentPageLink"/>
+          <include name="verifyStudentSelfPageLink"/>
+          <include name="verifyRefundPagelink"/>
+        </methods>
+      </class> <!-- com.nbcc.qa.testcases.HomePageTest -->
+      <class name="com.nbcc.qa.testcases.PaymentPageTest">
+        <methods>
+          <include name="verifypaymentpageLabel"/>
+          <include name="verifyaccounttexttest"/>
+          <include name="verifyelectronicpurchaselink"/>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- com.nbcc.qa.testcases.PaymentPageTest -->
+      <class name="com.nbcc.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUP"/>
+          <include name="NbccLogoImageTest"/>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+          <include name="signinTest"/>
+        </methods>
+      </class> <!-- com.nbcc.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- NBCC Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

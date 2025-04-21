@@ -1,0 +1,21 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite parallel="false" name="Suite">
+	
+	<listeners>
+		<listener class-name="com.nbcc.qa.ExtentReportListener.ExtentReportListener" />
+	</listeners>
+
+	
+  <test name="NBCC Test">
+    <classes>
+      <class name="com.nbcc.qa.testcases.HomePageTest"/>
+      <class name="com.nbcc.qa.testcases.LoginPageTest"/>
+      <class name="com.nbcc.qa.testcases.RefundPageTest"/>
+      <class name="com.nbcc.qa.testcases.PaymentPageTest"/>
+      <class name="com.nbcc.qa.testcases.StudentSelfSerivceTest"/>
+            <class name="com.nbcc.qa.testcases.DocumentUploadPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
